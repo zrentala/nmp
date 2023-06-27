@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Gesture";
-    src: url('..\fonts\Gesture.ttf');
+    src: url('../fonts/Gesture.ttf');
   }
 
 @font-face {
     font-family: "Type Machine";
-    src: url('..\fonts\Type Machine.ttf');
+    src: url('../fonts/Type Machine.ttf');
 }
 
 * {
@@ -78,7 +78,7 @@
   position: relative;
   width: 400px;
   height: 400px;
-  background: url("nmpback.png");
+  background: url("../nmpback.png");
   background-size: cover;
   border-radius: 50%;
   top: 50%;
