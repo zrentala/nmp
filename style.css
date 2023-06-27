@@ -636,6 +636,21 @@ background: linear-gradient(0deg, rgba(101,37,56,1) 0%, rgba(255,38,103,1) 51%, 
   .img-shad {
     opacity: 0;
   }
+
+  .circle-text {
+    display: contain;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    animation: animate 13s linear infinite;
+    text-align: center;
+    font-family: "Gesture";
+    font-size:10em;
+    color: #FFDF38;
+    width: 500px;
+    height:500px;
+  }
   
 }
  
