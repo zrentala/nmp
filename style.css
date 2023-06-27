@@ -1,0 +1,641 @@
+@font-face {
+    font-family: "Gesture";
+    src: url('fonts\Gesture.ttf');
+  }
+
+@font-face {
+    font-family: "Type Machine";
+    src: url('fonts\Type Machine.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #nav-logo {
+    margin: 1px;
+  }
+
+  section{
+    background-color: black;
+  }
+
+.nav-link:hover, .navbar-brand:hover, .navbar-toggler:hover {
+    color: #6B248E !important;
+    transition: 0.1s;
+}
+
+#hero-section {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%; 
+  /* background-color: #ccc; */
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  animation: animate 13s linear infinite;
+  text-align: center;
+  font-family: "Gesture";
+  font-size:10em;
+  color: #FFDF38;
+  width: 500px;
+  height:500px;
+}
+
+@keyframes animate {
+  0% {
+    transfrom: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-text span {
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+ transform-origin: 0 250px;
+
+  width: 100%;
+  height:100%;
+
+}
+
+.logo {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: url("nmpback.png");
+  background-size: cover;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  /* hero background image */
+.bg-image {
+    min-height:100vh;
+    background-color: black;
+    background:url("/119EEC86-8463-4854-A6C3-FD71771F119B(1).png");
+    background-size:cover;
+    position:relative;
+}
+
+.vid-pic-section {
+    background-color: black;
+    padding-top: 10%;
+    /* padding-bottom: 10%; */
+}
+
+.carousel-container {
+    display: grid;
+    gap: 10vh;
+    height: 150vh;
+}
+
+.splash {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  opacity: 100%;
+    background: #6B248E;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+
+}
+
+.splash.display-none {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  background: #6B248E;
+  z-index: -10;
+  opacity: 0%;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 2s;
+}
+
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.carousel-title {
+    color: white;
+    margin-left:5%;
+    font-family: "Gesture";
+    font-weight: 300;
+    font-size: 3em;
+}
+
+/* text type setting   */
+h1 {
+    font-family: "Gesture";
+    color: white;
+}
+
+p {
+  color: white;
+  font-family: "Type Machine";
+}
+
+.nav-item {
+    font-family: "Gesture"; 
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+#footer {
+    height: 15vh;
+    background-color: #6B248E;
+}
+.container-footer {
+  display: flex;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+}
+.logo-name-footer {
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-family: "Gesture";
+  font-size: 1em;
+}
+
+h4 {
+  color: white;
+  font-family: "Type Machine";
+}
+
+.social-icons {
+  display: flex;
+}
+
+.foot-item {
+  color: white;
+  font-size: 1em;
+}
+
+.foot-header {
+  color: white;
+  font-family: "Gesture";
+  position: relative;
+  font-size: 1.5em;
+}
+
+#follow-us {
+  left: 25px;
+}
+
+.sub-form {
+  display: flex;
+  gap: 0;
+  font-family: "Type Machine";
+  position: relative;
+  padding-top: 2%
+}
+
+input[type=text] {
+  padding:20px;
+  border:0;
+}
+
+.sub-butt {
+  background-color: #FFDF38; /* Green */
+  border: none;
+  color: white;
+  padding: 20px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.sub-butt:hover {
+  background-color: #84700f;
+  transition: 0.3s;
+}
+
+/* external css: flickity.css */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: "Type Machine"; }
+  
+/*   
+  .gallery-cell {
+    height: 315px;
+    margin-right: 10px;
+
+    background: #6B248E;
+    counter-increment: gallery-cell; 
+    align-items: center;
+    border-radius: 10px;
+  }
+/* 
+  .gallery-cell img {
+    display: block;
+  } */
+
+   
+  /* cell number */
+  /* .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 40vh;
+    font-size: 80px;
+    color: white;
+  }  */
+
+  .gallery {
+    background: #000;
+  }
+  
+  .gallery img {
+    display: block;
+    height: 310px;
+  }
+
+  .gallery-cell {
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+#tour-section {
+    height: 120vh;
+}
+
+/* accordion */
+   /* Style the buttons that are used to open and close the accordion panel */
+.accordion-all {
+    display: grid;
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Type Machine";
+    width: 100vh;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    display: grid;
+    /* padding: 0 18px; */
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 100vh;
+  font-family: "Gesture";
+  
+} 
+  
+.panel-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+  position: relative;
+  font-weight: 300;
+    font-size: 32px;
+    gap: 0;
+}
+
+.panel-place {
+    position: relative;
+    text-align: right;
+}
+
+#tour-title {
+  color: white;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+#about-section {
+  min-height: 50vh;
+  padding-bottom:10vh;
+}
+
+#top-info {
+  color: white;
+  margin-top: 10vh;
+  margin-right:25vh;
+  margin-left:25vh;
+  display: flex;
+}
+
+.fa {
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7s;
+}
+
+#soc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 5%;
+  gap: 10px;
+}
+
+#request-all {
+  height: 70px;
+  background-color: #eee;
+  width: 100vh;
+}
+
+#request-butt {
+  font-family: "Type Machine";
+  position: relative;
+  margin-top: 9px;
+  background-color: #6B248E; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#request-butt:hover {
+  background-color: #501c6b; 
+  transition: 0.3s;
+}
+
+#profile-section {
+  background-color: #FFDF38;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profiles {
+  display: flex;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+#about-the-band {
+  padding-top: 10vh;
+}
+
+/* @media only screen and (max-width: 768px) {
+  .text {
+    display: none;
+  }
+} */
+
+.profile-img {
+  height: 50vh;
+  width: 30vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: visible;
+  position: relative;
+  filter: drop-shadow(30px 10px 4px #5C213D70);
+}
+
+.prof-back {
+  background: rgb(101,37,56);
+background: -moz-linear-gradient(0deg, rgba(101,37,56,1) 0%, rgba(255,38,103,1) 51%, rgba(255,126,165,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(101,37,56,1) 0%, rgba(255,38,103,1) 51%, rgba(255,126,165,1) 100%);
+background: linear-gradient(0deg, rgba(101,37,56,1) 0%, rgba(255,38,103,1) 51%, rgba(255,126,165,1) 100%);
+border-radius: 10px;
+filter: drop-shadow(30px 10px 4px #5C213D70);
+overflow: hidden;
+}
+.img-1 {
+  background-image: url("Jess NMP.PNG");
+}
+
+.img-2 {
+  background-image: url("Liam NMP.PNG");
+}
+
+.img-3 {
+  background-image: url("Zach NMP.PNG");
+}
+
+.img-4 {
+  background-image: url("Alex NMP.PNG");
+}
+
+.img-shad {
+  height: 50vh;
+  width: 30vh;
+  align-items: center;
+  object-fit: cover;
+  opacity: 100;
+  filter: saturate(0.5);
+}
+
+.img-1:hover .id-1{
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img-2:hover .id-2{
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img-3:hover .id-3{
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img-4:hover .id-4{
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#desc-container {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background: rgb(101,37,56);
+background: -moz-linear-gradient(0deg, rgba(101,37,56,1) 0%, rgba(255,38,103,1) 51%, rgba(255,126,165,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(101,37,56,1) 0%, rgba(255,38,103,1) 51%, rgba(255,126,165,1) 100%);
+background: linear-gradient(0deg, rgba(101,37,56,1) 0%, rgba(255,38,103,1) 51%, rgba(255,126,165,1) 100%);
+  border-radius: 10px;
+  filter: drop-shadow(30px 10px 4px #5C213D70);
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.desc-back{
+  margin: 5%;
+  background-color: #FFFFFF50;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #profiles {
+   padding-left: 15%;
+  }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+   #profiles {
+    padding-left: 22%;
+   }
+   #top-info {
+     margin-top: 10vh;
+     margin-bottom:10vh;
+     margin-right:3vh;
+     margin-left:3vh;
+   }
+.accordion {
+    width: 50vh;
+  }
+
+  .panel {
+  width: 50vh;
+  
+  } 
+  #request-all {
+  width: 50vh;
+  }
+  #footer {
+    height: auto;
+    background-color: #6B248E;
+  }
+  .container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  }
+  .logo-name-footer {
+  color: white;
+  }
+
+  .social-icons {
+  display: flex;
+  flex-direction: row;
+  }
+
+  .foot-item {
+  color: white;
+  font-size: 1em;
+  }
+
+  .foot-header {
+  color: white;
+  font-family: "Gesture";
+  position: relative;
+  font-size: 1.5em;
+  }
+
+  #follow-us {
+  left: 0px;
+  }
+
+  .sub-form {
+  display: flex;
+  gap: 0;
+  font-family: "Type Machine";
+  position: relative;
+  padding-top: 0%;
+  margin-bottom:5%;
+  }
+
+  input[type=text] {
+  padding:20px;
+  border:0;
+  }
+
+
+  .sub-butt:hover {
+  background-color: #282828;
+  transition: 0.3s;
+  }
+
+  .img-1 {
+    opacity: 1;
+  }
+  
+  .img-2 {
+    opacity: 1;
+  }
+  
+  .img-3 {
+    opacity: 1;
+  }
+  
+  .img-4 {
+    opacity: 1;
+  }
+  .img-shad {
+    opacity: 0;
+  }
+  
+}
+ 

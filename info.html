@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="about-section">
+           <!-- navbar -->
+     <div id="nav-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <div id="top-info">
+        <span class="info-text">
+            <h1>
+                About
+            </h1>
+            <p>
+                Not Mister Purple is a band that was formed on a dark and stormy night by a group of musically skilled students jamming together early in their freshman year. Fueled by their shared passion for songwriting and performing, they broke into the campus music scene, making their debut at the Kelly Writers House. 
+                With Not Mister Purple’s repertoire containing an eclectic amalgamation of genres, ranging anywhere from classic rock to hyperpop, it’s hard to pin down exactly who they are. 
+                But, it’s clear who they are not.
+            </p>
+        </span>
+        <span id="soc-container"> 
+            <a class="soc-icon" href="https://www.instagram.com/notmisterpurple/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+            <a class="soc-icon" href="https://www.google.com/url?q=https%3A%2F%2Fsoundcloud.com%2Fnotmisterpurple%3Futm_source%3Dclipboard%26utm_medium%3Dtext%26utm_campaign%3Dsocial_sharing&sa=D&sntz=1&usg=AOvVaw2RkTn5Ctj-b3snDsDxq5x0" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a>
+            <a class="soc-icon" href="https://www.youtube.com/channel/UCvFXXBeVnjkApuaMKWLaYdg/" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+        </span>
+    </div>
+    </section>
+    <section id="profile-section">
+        <div id="about-the-band">
+            <h1>Meet The Band</h1>
+        </div>
+        <a id="profiles">
+            <span class="prof-back">
+                <div class="profile-img img-1">
+                    <img class="id-1 img-shad" src="Shadow Jess.PNG" alt="">
+                </div>
+                <div class="desc-back-1 desc-back">
+                    <p data-id="1" class="desc-1 desc">
+                        Jess Leckhart
+                    </p>
+                 </div>
+            </span>
+            <span class="prof-back">
+                <div class="profile-img img-2">
+                    <img class="id-2 img-shad" src="Shadow Liam.PNG" alt="">
+                </div>
+                <div class="desc-back-2 desc-back"> 
+                    <p data-id="2" class="desc-2 desc">
+                        Liam
+                    </p>
+                </div>
+            </span>
+            <span class="prof-back">
+                <div class="profile-img img-3">
+                    <img class="id-3 img-shad" src="Shadow Zach.PNG" alt="">
+                </div>
+                <div class="desc-back-3 desc-back">
+                    <p data-id="3" class="desc-3 desc">
+                        Zach
+                    </p>
+                    </div>
+            </span>
+            <span class="prof-back">
+                <div class="profile-img img-4">
+                    <img class="id-4 img-shad" src="Shadow Alex.PNG" alt="">
+                </div>
+                <div class="desc-back-4 desc-back">
+                    <p data-id="4" class="desc-4 desc">
+                        Alex
+                    </p>
+                </div>
+            </span>
+        </a>
+    </section>
+
+    <footer id="footer">
+        <div class="container-footer">
+            <span class="social icons">
+                <h2 class="foot-header" id="follow-us">Follow Us</h2>
+                <a class="soc-icon" href="https://www.instagram.com/notmisterpurple/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                <a class="soc-icon" href="https://www.google.com/url?q=https%3A%2F%2Fsoundcloud.com%2Fnotmisterpurple%3Futm_source%3Dclipboard%26utm_medium%3Dtext%26utm_campaign%3Dsocial_sharing&sa=D&sntz=1&usg=AOvVaw2RkTn5Ctj-b3snDsDxq5x0" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a>
+                <a class="soc-icon" href="https://www.youtube.com/channel/UCvFXXBeVnjkApuaMKWLaYdg/" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+            </span>
+            <span class="contact-us">
+                <h2 class="foot-header">Contact Us</h2>
+                <h4 class="foot-item">notmisterpurple@gmail.com</h4>
+                <h4 class="foot-item">(914) 282-8556</h4>
+            </span>
+            <span class="submit">
+                <form class="sub-form" method="post" action="mailto:zrentala@gmail.com"">
+                    <button class="sub-butt" type="submit">Get In Touch</button>
+                  </form>
+            </span>
+        </div>
+    </footer>
+    <script src="app.Js"></script>
+</body>
+</html>

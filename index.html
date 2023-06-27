@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="splash">
+        <div class= "fade-in" id="hero-section">
+            <div class="logo"></div>
+        </div>
+    </div>
+     
+    <section class="bg-image" id="home">
+        <!-- navbar -->
+     <div id="nav-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+        <div id="hero-section">
+            <div class="logo"></div>
+            <div class="circle-text">
+                Not Mister Purple
+            </div>
+        </div>
+    </section>
+    <section class="vid-pic-section">
+        <div class="carousel-container">
+            <div class="item-container">
+                <div class="carousel-title">
+                    Videos
+                </div>
+                <div class="gallery js-flickity"
+                    data-flickity-options='{ "cellAlign": "left"  }'>
+                    <div class="gallery-cell">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TSMrUlmUwTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="gallery-cell">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PHv4Qby6ZVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-cell">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tVISdR2jv2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-cell">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/P_4O7hJ-OSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-container">
+                <div class="carousel-title">
+                    Pictures
+                </div>
+                <div class="gallery js-flickity"
+                    data-flickity-options='{ "wrapAround": true }'>
+                    <img class="gallery-cell" src="gallery\1FE4F2A3-2FF7-4B3A-93AF-7483511C8A3E.jpg" alt="">
+                    <img class="gallery-cell" src="gallery\5E8F8D21-C37D-4835-A085-6DA587F5DE66IMG_5637.jpg" alt="">
+                    <img class="gallery-cell" src="gallery\017E55C9-5DDB-4848-85CD-75B167116517.jpg" alt="">
+                    <img class="gallery-cell" src="gallery\29FC246C-DDD7-4970-A8AF-20AB51AF89A9IMG_5639.jpg" alt="">
+                    <img class="gallery-cell" src="gallery\61BC60E5-8546-4868-AC9B-20E68E974ED9IMG_5635.jpg" alt="">
+                    <img class="gallery-cell" src="gallery\C9F416C9-DB6E-4C27-96B7-72B60305CF6EIMG_5640.jpg" alt="">
+                    <img class="gallery-cell" src="gallery\D8BF9F55-CA9C-4861-8AAB-E84B007A0EE0.jpg" alt="">
+                    <img class="gallery-cell" src="gallery\FullSizeRender.jpg" alt="">
+                    <img class="gallery-cell" src="gallery\IMG_1795.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        const text = document.querySelector('.circle-text');
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+        const element = document.querySelectorAll('span');
+        for (let i = 0; i<element.length; i++) {
+            element[i].style.transform = "rotate("+i*24+"deg)";
+        }
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <footer id="footer">
+        <div class="container-footer">
+            <span class="social icons">
+                <h2 class="foot-header" id="follow-us">Follow Us</h2>
+                <a class="soc-icon" href="https://www.instagram.com/notmisterpurple/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                <a class="soc-icon" href="https://www.google.com/url?q=https%3A%2F%2Fsoundcloud.com%2Fnotmisterpurple%3Futm_source%3Dclipboard%26utm_medium%3Dtext%26utm_campaign%3Dsocial_sharing&sa=D&sntz=1&usg=AOvVaw2RkTn5Ctj-b3snDsDxq5x0" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a>
+                <a class="soc-icon" href="https://www.youtube.com/channel/UCvFXXBeVnjkApuaMKWLaYdg/" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+            </span>
+            <span class="contact-us">
+                <h2 class="foot-header">Contact Us</h2>
+                <h4 class="foot-item">notmisterpurple@gmail.com</h4>
+                <h4 class="foot-item">(914) 282-8556</h4>
+            </span>
+            <span class="submit">
+                <form class="sub-form" method="post" action="mailto:zrentala@gmail.com"">
+                    <button class="sub-butt" type="submit">Get In Touch</button>
+                  </form>
+            </span>
+        </div>
+    </footer>
+    <script src="app.Js"></script>
+</body>
+</html>
