@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Gesture";
-    src: url('fonts\Gesture.ttf');
+    src: url('..\fonts\Gesture.ttf');
   }
 
 @font-face {
     font-family: "Type Machine";
-    src: url('fonts\Type Machine.ttf');
+    src: url('..\fonts\Type Machine.ttf');
 }
 
 * {
@@ -90,7 +90,7 @@
 .bg-image {
     min-height:100vh;
     background-color: black;
-    background:url("/119EEC86-8463-4854-A6C3-FD71771F119B(1).png");
+    background:url("../119EEC86-8463-4854-A6C3-FD71771F119B(1).png");
     background-size:cover;
     position:relative;
 }
@@ -470,19 +470,19 @@ filter: drop-shadow(30px 10px 4px #5C213D70);
 overflow: hidden;
 }
 .img-1 {
-  background-image: url("Jess NMP.PNG");
+  background-image: url("../Jess NMP.PNG");
 }
 
 .img-2 {
-  background-image: url("Liam NMP.PNG");
+  background-image: url("../Liam NMP.PNG");
 }
 
 .img-3 {
-  background-image: url("Zach NMP.PNG");
+  background-image: url("../Zach NMP.PNG");
 }
 
 .img-4 {
-  background-image: url("Alex NMP.PNG");
+  background-image: url("../Alex NMP.PNG");
 }
 
 .img-shad {
