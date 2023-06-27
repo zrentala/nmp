@@ -300,7 +300,7 @@ input[type=text] {
   }
 
 #tour-section {
-    height: 120vh;
+    height: 140vh;
 }
 
 /* accordion */
@@ -491,7 +491,7 @@ overflow: hidden;
   width: 30vh;
   align-items: center;
   object-fit: cover;
-  opacity: 100;
+  opacity: 1;
   filter: saturate(0.5);
 }
 
